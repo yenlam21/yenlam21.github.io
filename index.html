@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    
+  </head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>YEMLAM TECHNOLOGY</title>
+  </head>
+  <body ng-controller="myctrl" >
+
+    <div class="navbar-container">
+      <header id="header-bar">
+        <div class="container d-flex align-items-center header_content">
+          <div class="logo_main" id="header-logo">
+            <img class="logo" width="100%" src="https://scontent.fsgn2-8.fna.fbcdn.net/v/t1.15752-9/433665357_1084880062590308_5896246472485437058_n.png?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=v2CEXeCnZCIAX8WzD2X&_nc_ht=scontent.fsgn2-8.fna&oh=03_AdXN1Vs4vuRVGsXbWQo6NCIwyH9QjF5L4cPTkXX0nprKjg&oe=663466DF" alt="" />
+          </div>
+          <div class="form_search-box col d-flex align-items-center">
+            <input ng-model="timKiem" type="text" class="form-control col-12" placeholder="Nhập tên điện thoại, máy tính, phụ kiện,.. cần tìm "/>
+            <button ng-click="handleSearch()" class="btn btn-dark"><i class="bi bi-search"></i></button>
+          </div>
+        <div class="nav nav-item" id="header-items">
+          <ul class="nav nav-pills nav-justified">
+            <li class="nav-item">
+              <i class="bi bi-file-earmark-bar-graph-fill"></i>
+              <a class="nav-link" href="#"><small> Thông tin hay</small> </a>
+            </li>
+            <li class="nav-item">
+              <i class="bi bi-credit-card-2-front-fill"></i>
+              <a class="nav-link" style="width: 150px" href="#"><small>Thanh toán & tiện ích</small></a>
+            </li>
+            <li class="nav-item">
+              <i class="bi bi-person-circle"></i>
+              <a class="nav-link" href="#"
+                ><small> Tài khoản của tôi</small>
+              </a>
+            </li>
+            <li class="nav-item">
+              <i class="bi bi-cart-fill"></i>
+              <a class="nav-link" href="./GH.html"><small> Giỏ hàng</small> </a>
+            </li>
+          </ul>
+        </div>
+      
+      </header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="navbar-lead">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="logo_main">
+          </div>
+        </div>
+        
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><small> TRANG CHỦ</small> </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dienthoai.html"><small> ĐIỆN THOẠI</small> </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><small> LAP TOP</small></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" ><small> MÁY TÍNH BẢNG</small></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" ><small> APPLE</small> </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><small> PC-LINH KIỆN</small></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><small> PHỤ KIỆN</small> </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><small> MÁY CŨ GIÁ RẺ</small></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><small>HÀNG GIA DỤNG</small></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><small>SIM THẺ</small></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><small>KHUYẾN MÃI</small></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="bodyimg">
+      <div class="main main-wrapper">
+        <div class="row">
+          <div class="col-12">
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+      <div >     
+    </div>
+    </div>   
+      </div>
+      <div class="container">
+        
+        <div class="card">
+          <h4 style="background-color: white; margin: 15px;">LAPTOP BÁN CHẠY</h4>
+          <div class="row">
+            <div class="card-body">
+              <div class="crad col-md-12">
+          <div class="card-body" >
+                  <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/11/12/637407970062806725_mba-2020-gold-dd.png" alt="" width="100%" height="180px">
+                </div> 
+              </div>  
+              <card-title><h5>Macbook Air 13 2020 M1</h5> </card-title>
+              <div class="price-container">
+                <span class="price-primary">21.990.000 đ</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="crad col-md-12">
+                <div class="card-body" >
+                  <img  src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/1/26/637787904727727554_asus-tuf-gaming-fx506lh-den-2022-dd.jpg" alt="" width="100%" height="180px">
+                </div> 
+              </div>  
+              <card-title><h5>Asus TUF Gaming </h5> </card-title>
+              <div class="price-container">
+                <span class="price-primary">16.690.000 đ</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="crad col-md-12">
+                <div class="card-body" >
+                  <img  src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/7/29/637947006257497678_hp-pavilion-15-eg-bac-2022-win11-dd.jpg" alt="" width="100%" height="180px">
+                </div> 
+              </div>  
+              <card-title><h5>Iphone 14 pro max 128GB</h5> </card-title>
+              <div class="price-container">
+                <span class="price-primary">16.490.000 đ</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="crad col-md-12">
+                <div class="card-body" >
+                  <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/8/2/637950740313797526_asus-tuf-gaming-fa506ihr-den-dd.jpg" alt="" width="100%" height="180px">
+                </div> 
+              </div>  
+              <card-title><h5>Asus Tuf Gaming </h5> </card-title>
+              <div class="price-container">
+                <span class="price-primary">18.990.000 đ</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="card-body">
+              <div class="crad col-md-12">
+                <div class="card-body" >
+                  <img  src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/8/7/637639339928194488_msi-gaming-gf63-den-dd.jpg" alt="" width="100%" height="180px">
+                  <div class="badge-container">
+                  </div>
+                </div> 
+              </div>  
+              <card-title><h5>MSI Gaming GF63 Thin</h5> </card-title>
+              <div class="price-container">
+                <span class="price-primary">29.990.000 đ</span>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <div class="crad col-md-12">
+                <div class="card-body" >
+                  <img  src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/8/26/637971149907512230_lenovo-ideapad-gaming-3-15iah7-xam-dd.jpg" alt="" width="100%" height="180px">
+                </div> 
+            </div>  
+            <card-title><h5>Lenovo Gaming IdePad</h5> </card-title>
+            <div class="price-container">
+              <span class="price-primary">20.490.000 đ</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="crad col-md-12">
+              <div class="card-body" >
+                <img  src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/10/7/638007352801976726_msi-gaming-gf63-thin-11sc-1090vn-den-dd.jpg" alt="" width="100%" height="180px">
+              </div> 
+            </div>  
+            <card-title><h5>MSI Gaming GF63 Thin 11SC</h5> </card-title>
+            <div class="price-container">
+              <span class="price-primary">16.990.000 đ</span>
+              <div class="sale-price-container">
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="card-body">
+            <div class="crad col-md-12">
+              <div class="card-body" >
+                <img  src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/11/9/638036059541782094_gigabyte-gaming-g5-ge-i5-12500h-rtx3050-dd-bh-moi.jpg" alt="" width="100%" height="180px">
+              </div> 
+            </div>  
+            <card-title><h5>Gaming G5 i5 </h5> </card-title>
+            <div class="price-container">
+              <span class="price-primary">21.690.000 đ</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="container">
+        
+        <div class="card">
+          <h4 style="background-color: white; margin: 15px;">ĐIỆN THOẠI NỔI BẬT</h4>
+          <div class="row">
+            <div class="card-body">
+              <div class="crad col-md-12">
+
+
+                <div class="card-body" >
+                  <img style="margin-left:15px ;" src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2023/1/11/638090353746989186_iphone-13-dd-bh.jpg" alt="" width="80%" height="180px">
+                </div> 
+              </div>  
+              <card-title><h5>Iphone 14 pro max 128GB</h5> </card-title>
+              <div class="price-container">
+                <span class="price-primary">29.990.000 đ</span>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <div class="crad col-md-12">
+                <div class="card-body" >
+                  <img style="margin-left:15px ;" src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/12/21/638072157041005486_xiaomi-redmi-note-11-dd-bh.jpg" alt="" width="80%" height="180px">
+                </div> 
+              </div>  
+              <card-title><h5>Iphone 14 pro max 128GB</h5> </card-title>
+              <div class="price-container">
+                <span class="price-primary">29.990.000 đ</span>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <div class="crad col-md-12">
+                <div class="card-body" >
+                  <img style="margin-left:15px ;" src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/11/1/638028873543676599_samsung-galaxy-s22-ultra-dd-tragop-bh.jpg" alt="" width="80%" height="180px">
+                </div> 
+              </div>  
+              <card-title><h5>Iphone 14 pro max 128GB</h5> </card-title>
+              <div class="price-container">
+                <span class="price-primary">29.990.000 đ</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="crad col-md-12">
+                <div class="card-body" >
+                  <img style="margin-left:15px ;" src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/12/21/638072154743011638_xiaomi-redmi-10-dd-bh.jpg" alt="" width="80%" height="180px">
+                  <div class="badge-container">
+
+                  </div>
+                </div> 
+              </div>  
+              <card-title><h5>Iphone 14 pro max 128GB</h5> </card-title>
+              <div class="price-container">
+                <span class="price-primary">29.990.000 đ</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="card-body">
+              <div class="crad col-md-12">
+                <div class="card-body" >
+                  <img style="margin-left:15px ;" src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/12/23/638073848656369166_iphone-11-dd-bh.jpg" alt="" width="80%" height="180px">
+                  <div class="badge-container">
+
+                  </div>
+                </div> 
+              </div>  
+              <card-title><h5>Iphone 14 pro max 128GB</h5> </card-title>
+              <div class="price-container">
+                <span class="price-primary">29.990.000 đ</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="crad col-md-12">
+                <div class="card-body" >
+                  <img style="margin-left:15px ;" src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2023/1/13/638092021139867343_samsung-galaxy-z-flip4-dd-docquyen-bh.jpg" alt="" width="80%" height="180px">
+                  <div class="badge-container">
+                  </div>
+                </div> 
+              </div>  
+              <card-title><h5>Iphone 14 pro max 128GB</h5> </card-title>
+              <div class="price-container">
+                <span class="price-primary">29.990.000 đ</span>
+
+              </div>
+              <div>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <div class="crad col-md-12">
+                <div class="card-body" >
+                  <img style="margin-left:15px ;" src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/12/20/638071499364966239_oppo-a77s-dd.jpg" alt="" width="80%" height="180px">
+                  <div class="badge-container">
+                  </div>
+                </div> 
+              </div>  
+              <card-title><h5>Iphone 14 pro max 128GB</h5> </card-title>
+              <div class="price-container">
+                <span class="price-primary">29.990.000 đ</span>
+              </div>
+              <div>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="crad col-md-12">
+                <div class="card-body" >
+                  <img style="margin-left:15px ;" src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/12/20/638071502453762468_oppo-a17k-dd.jpg" alt="" width="80%" height="180px">
+                  <div class="badge-container">
+                  </div>
+                </div> 
+              </div>  
+              <card-title><h5>Iphone 14 pro max 128GB</h5> </card-title>
+              <div class="price-container">
+                <span class="price-primary">29.990.000 đ</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="container mt-3">
+        <div class="card">
+          <h4 style="background-color: white; margin: 15px;">LAPTOP BÁN CHẠY</h4>
+          <div class="row">
+
+          <div class="card-body">
+            <div class="crad col-md-12">
+              <div class="card-body" >
+                <img  src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/12/6/638059452014421919_ipad-gen-9-wifi-dd.jpg" alt="" width="100%" height="180px">
+                <div class="badge-container">
+                </div>
+              </div> 
+            </div>  
+            <card-title><h5>Ipad gen 9 2021 </h5> </card-title>
+            <div class="price-container">
+              <span class="price-primary">7.490.000 đ</span>
+              <div class="sale-price-container">
+
+              </div>
+            </div>
+            <div>
+            
+
+            </div>
+          </div>
+
+
+          <div class="card-body">
+            <div class="crad col-md-12">
+              <div class="card-body" >
+                <img  src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/5/27/637577199955105403_ss-tab-a7-lite-bac-dd.jpg" alt="" width="100%" height="180px">
+                <div class="badge-container">
+
+                </div>
+              </div> 
+            </div>  
+            <card-title><h5>Samsung Galaxy Tab A7 </h5> </card-title>
+            <div class="price-container">
+              <span class="price-primary">3.490.000 đ</span>
+              <div class="sale-price-container">
+
+              </div>
+            </div>
+            <div>
+
+            </div>
+          </div>
+
+
+          <div class="card-body">
+            <div class="crad col-md-12">
+              <div class="card-body" >
+                <img  src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/10/6/638006464334220327_lenovo-tab-m10-gen-2-dd-bh.jpg" alt="" width="100%" height="180px">
+                <div class="badge-container">
+
+                </div>
+              </div> 
+            </div>  
+            <card-title><h5>lenovo Tab M10 64GB</h5> </card-title>
+            <div class="price-container">
+              <span class="price-primary">4.090.000 đ</span>
+              <div class="sale-price-container">
+
+              </div>
+            </div>
+            <div>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <div class="crad col-md-12">
+              <div class="card-body" >
+                <img  src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/9/22/637994581190835400_may-tinh-bang-masstel-tab-10-wifi-dd-docquyen.jpg  " alt="" width="100%" height="180px">
+                <div class="badge-container">
+                </div>
+              </div> 
+            </div>  
+            <card-title><h5>Ipad gen 9 2021 </h5> </card-title>
+            <div class="price-container">
+              <span class="price-primary">7.490.000 đ</span>
+              <div class="sale-price-container">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-3" style="background-color: #fff ; border-radius: 5px; width: 100%;">
+      <div id="myCarousel3" class="carousel slide" data-ride="carousel">
+      
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="product-container row" style="margin: 15px;">
+              <div class="col-sm">
+                <img width="100%"style="border-radius: 5px;" src="https://images.fpt.shop/unsafe/fit-in/384x180/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/10/18/638016979468850535_F_384x180 copy 5.jpg" alt="">
+              </div>
+              <div class="col-sm">
+                <img width="100%" style="border-radius: 5px;" src="https://images.fpt.shop/unsafe/fit-in/384x180/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/7/20/637939254988073687_F_384x180-6.png" alt="">
+              </div>
+              <div class="col-sm">
+                <img width="100%"style="border-radius: 5px;"src="https://images.fpt.shop/unsafe/fit-in/384x180/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/7/20/637939260761612196_F_384x180-4.png" alt="">
+              </div>
+              
+            </div>
+          </div>
+          
+          <div class="carousel-item">
+            <div class="product-container row" style="margin: 15px;">
+              <div class="col-sm">
+                <img width="100%" style="border-radius: 5px;" src="https://images.fpt.shop/unsafe/fit-in/384x180/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/7/20/637939254988073687_F_384x180-6.png" alt="">
+              </div>
+              <div class="col-sm">
+                <img width="100%"style="border-radius: 5px;"src="https://images.fpt.shop/unsafe/fit-in/384x180/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/7/20/637939260761612196_F_384x180-4.png" alt="">
+              </div>
+              <div class="col-sm">
+                <img width="100%"style="border-radius: 5px;" src="https://images.fpt.shop/unsafe/fit-in/384x180/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/11/30/638054473432676820_F_H3_384x180.png" alt="">
+              </div>
+              
+              
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="product-container row" style="margin: 15px;">
+              <div class="col-sm">
+                <img width="100%"style="border-radius: 5px;"src="https://images.fpt.shop/unsafe/fit-in/384x180/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/7/20/637939260761612196_F_384x180-4.png" alt="">
+              </div>
+              <div class="col-sm">
+                <img width="100%"style="border-radius: 5px;" src="https://images.fpt.shop/unsafe/fit-in/384x180/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/11/30/638054473432676820_F_H3_384x180.png" alt="">
+              </div>
+              <div class="col-sm">
+                <img width="100%"style="border-radius: 5px;"src="https://images.fpt.shop/unsafe/fit-in/384x180/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/7/20/637939254988073687_F_384x180-6.png" alt="">
+              </div>
+              
+            </div>
+          </div>
+
+
+          <div class="carousel-item">
+            <div class="product-container row" style="margin: 15px;">
+              <div class="col-sm">
+                <img width="100%"style="border-radius: 5px;" src="https://images.fpt.shop/unsafe/fit-in/384x180/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/11/30/638054473432676820_F_H3_384x180.png" alt="">
+              </div>
+              <div class="col-sm">
+                <img width="100%"style="border-radius: 5px;"src="https://images.fpt.shop/unsafe/fit-in/384x180/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/7/20/637939254988073687_F_384x180-6.png" alt="">
+              </div>
+              <div class="col-sm">
+                <img width="100%"style="border-radius: 5px;"src="https://images.fpt.shop/unsafe/fit-in/384x180/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/10/18/638016979468850535_F_384x180 copy 5.jpg" alt="">
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    </div>
+    <footer class="footdes">
+      <div class="container-fluid footer-1">
+          <div class="row">
+            <div class="col-sm-4 foocol">
+              <h4 class="text-white fh4">DUC TAM TECHNOLOGY</h4>
+              <p class="text-white">Laptop / Dell / Inspiron / Vostro / XPS / G-Series / HP / Pavilion / ENVY / EliteBook / Essential / ProBook / Spectre / ZBook / OMEN / ASUS / VivoBook / ZenBook / ASUSPRO / TUF Gaming / ROG / Acer / Aspire / Swift / Spin / Nitro / Predator / Lenovo / Ideapad / ThinkPad / Legion / Yoga / ThinkBook / Apple / MacBook Air / MacBook Pro / MSI / Content Creation / GF Gaming / GL Gaming / GP Gaming / GE Gaming / GS Gaming / GT Gaming / Xiaomi / LG / Linh kiện Laptop </p>
+             </div>
+            <div class="col-sm-4 foocol">
+              <h4 class="text-white fh4">Mục Lục </h4>
+              <i class="fas fa-tv text-white" > <a href="#" style="text-decoration: none; list-style:none; display:inline-block;">ĐIỆN THOẠI </a></i> <br />
+              <i class="fas fa-mobile text-white" > <a href="#" style="text-decoration: none; list-style:none; display:inline-block;">Mobiles</a></i> <br />
+              <i class="fas fa-laptop text-white" > <a href="#" style="text-decoration: none; list-style:none; display:inline-block;">PC</a></i> <br />
+              <i class="fas fa-utensils text-white" > <a href="#" style="text-decoration: none; list-style:none; display:inline-block;">WIN TOOL</a></i> <br />
+              <i class="fas fa-book text-white" > <a href="#" style="text-decoration: none; list-style:none; display:inline-block;">CRACK</a></i> <br />
+              <i class="fas fa-tshirt text-white" > <a href="#" style="text-decoration: none; list-style:none; display:inline-block;">TƯ VẤN</a></i> <br />
+              <i class="fas fa-running text-white" > <a href="#" style="text-decoration: none; list-style:none; display:inline-block;">GEAR</a></i> <br />
+              <i class="fas fa-rupee-sign text-white" > <a href="#" style="text-decoration: none; list-style:none; display:inline-block;">LAPTOP</a></i>  <br />
+              <i class="fas fa-gift text-white" > <a href="#" style="text-decoration: none; list-style:none; display:inline-block;">HƯỚNG DẪN SỬ DỤNG</a></i> <br />
+            </div>
+            <div class="col-sm-4 foocol">
+              <h4 class="text-white fh4">TƯ VẤN </h4>
+              <span style="color:antiquewhite; text-transform:uppercase;">Địa Chỉ:</span><span class="text-white"> FPT SCHOOL, ĐÀ NẴNG</span><br />
+              <pc class="text-white">Có bất cứ câu hỏi gì <a href="">hãy liên hệ </a> chúng tôi .</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.8561681211872!2d108.2583163745246!3d15.968885884696194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142116949840599%3A0x365b35580f52e8d5!2zxJDhuqFpIGjhu41jIEZQVCDEkMOgIE7hurVuZw!5e0!3m2!1svi!2s!4v1712031256556!5m2!1svi!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+          <div class="row">
+              <div class="footer-2 col-sm foocol-2">
+                  <div class="footer-2-div">
+                  <a class="text-white" style="float:right; margin-right:05px;">&copy;2024 <b>Yên Lam  </b></a>
+        
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+  </body> 
+</html>
